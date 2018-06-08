@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>title</title>
+    <title>Crawler</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
   </head>
   <body>
   	<div class="header">
   		<div class="header-text">Crawler</div>
+      <br>
 	  	<form>
-	  		<input type="text" name="crawler" <?php if (isset($_GET['crawler'])) { echo 'value="' . $_GET['crawler'] . '"';} ?>>
+	  		<input type="text" name="crawler"<?php if (isset($_GET['crawler'])) { echo 'value="' . $_GET['crawler'] . '"';} ?>>
 	  		<input type="submit" value="Crawl!">
 	  	</form>
 	</div>
@@ -44,7 +45,7 @@ function get_links($url) {
     $links = array_unique($links);
 
     foreach($links as $link) {
-        $returnedHtml .= '<a href="http://localhost/crawler.php?crawler='. urlencode($link) .'" class="link">' . $link . '</a>';
+        $returnedHtml .= '<a href="'. $link .'" class="link">' . $link . '</a>';
     }
     //Return the links
     return $returnedHtml;

@@ -1,0 +1,39 @@
+.header 
+{
+	background: #666699;
+	padding: 20px;
+	text-align: center;
+}
+
+.header-text 
+{
+	font-size: 60px;
+	line-height: 30px;
+	font-family: Impact;
+}
+
+.link 
+{
+	padding: 5px;
+	display: inline-block;
+	background: #CCCCFF;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+input[type=text] 
+{
+	width: 50%;
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: #ccccff;
+    color: #990066;
+}
+input[type=submit] 
+{
+   
+    background-color: #ccccff;
+    color: black;
+    font-size: 20px;
+    font-style:italic;
+}
